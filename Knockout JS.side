@@ -1,0 +1,121 @@
+{
+  "id": "d738544a-7d85-4bd1-bd6a-d97910aa8ffa",
+  "version": "2.0",
+  "name": "Knockout JS",
+  "url": "https://todomvc.com/examples/knockoutjs/",
+  "tests": [{
+    "id": "db92118e-7848-4c2f-ba0a-aa2540d18f45",
+    "name": "Add Done Update Delete",
+    "commands": [{
+      "id": "1551b667-3eff-4b41-9814-c46eebc4d4c2",
+      "comment": "",
+      "command": "open",
+      "target": "https://todomvc.com/examples/knockoutjs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "251fd52d-db2d-4289-b5f7-2d3ad8c1d0dd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1278x1399",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b37434b-3440-405e-883c-3351974f4267",
+      "comment": "",
+      "command": "click",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cec6940-2683-447d-b5d4-f59ced12d001",
+      "comment": "",
+      "command": "type",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "something"
+    }, {
+      "id": "c8e19a6e-0b48-4c7b-83ab-8b605bc67ea1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "4022b099-f188-4cf1-afea-1cda516d9c70",
+      "comment": "",
+      "command": "click",
+      "target": "css=.toggle",
+      "targets": [
+        ["css=.toggle", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[2]", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a3467cc-feaa-42c7-aba5-947dc65d8427",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Active",
+      "targets": [
+        ["linkText=Active", "linkText"],
+        ["css=.filters > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Active')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/active')]", "xpath:href"],
+        ["xpath=//footer/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Active')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76200f64-8ea9-4d67-8def-048a8127a48d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Completed",
+      "targets": [
+        ["linkText=Completed", "linkText"],
+        ["css=.filters > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Completed')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/completed')]", "xpath:href"],
+        ["xpath=//footer/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Completed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4c8f967-612b-4089-b870-84eba9f2db86",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90d63d9a-4640-4f4a-afe6-bcb10542c530",
+      "comment": "",
+      "command": "click",
+      "target": "css=.destroy",
+      "targets": [
+        ["css=.destroy", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3e2e1a8c-b68e-4200-817a-bc33651d99fa",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["db92118e-7848-4c2f-ba0a-aa2540d18f45"]
+  }],
+  "urls": ["https://todomvc.com/examples/knockoutjs/"],
+  "plugins": []
+}
